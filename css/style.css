@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Poppins:wght@600&family=Roboto:wght@100&family=Varela+Round&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow-y: auto;
+  height: calc(100% - 60px);
+  margin-top: 60px;
+}
+.fixo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  text-decoration: none;
+}
+.fixo::after {
+  content: "^";
+  font-size: 32px;
+  font-weight: bold;
+  color: aliceblue;
+  transition: margin-top 250ms;
+}
+.fixo:hover::after {
+  margin-top: -8px;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+p {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Arima";
+}
+/*header*/
+.logo {
+  border-radius: 60px;
+  width: 120px;
+  height: 50px;
+}
+.image {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+}
+.border-3 {
+  --bs-border-width: 0;
+}
+/*Media queer */
+@media (max-width: 500px) {
+  .image {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+/* content */
+h1 {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content {
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.footer {
+  background-color: #212529;
+  color: white;
+}
+
+/* Media queries */
+@media (max-width: 629px) {
+  .content {
+    align-items: center;
+  }
+}
+@media (min-width: 630px) and (max-width: 959px) {
+  .content {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media (min-width: 960px) {
+  h1 {
+    text-align: center;
+  }
+
+  .content {
+    width: 100vw;
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+/* Tela Login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+}
+.image-login {
+  background-image: url("https://wallpaperaccess.com/full/3097725.jpg");
+  object-fit: contain;
+}
+h2 {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+#card-login {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.logo_login {
+  border-radius: 50px;
+  width: 150px;
+  height: 100px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+}
+/*media Queer*/
+@media (max-width: 500px) {
+  .login {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/* content */
+
+section > h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content {
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.content :hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #212529;
+  margin-top: 30px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contributors {
+  padding: 30px 10px;
+}
+
+.rp {
+  margin: 0;
+}
+
+.ad {
+  color: gray;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #212529;
+  color: white;
+}
+
+/* Media queries */
+@media (max-width: 629px) {
+  .content {
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 959px) {
+  .content {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  h1 {
+    text-align: center;
+  }
+
+  .content {
+    width: 100vw;
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+/* Páginas*/
+.media-picture {
+  background-image: url("https://images5.alphacoders.com/104/1046568.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 130vh;
+  width: 100%;
+}
+#banner-onepiece {
+  background-image: url("https://images5.alphacoders.com/104/1046568.jpg");
+}
+#banner-onepush {
+  background-image: url("https://images6.alphacoders.com/656/656724.png");
+}
+#banner-death {
+  background-image: url("https://images2.alphacoders.com/153/153250.jpg");
+}
+#banner-fullmetal {
+  background-image: url("https://images3.alphacoders.com/108/108067.jpg");
+}
+#banner-hunter {
+  background-image: url("https://images.alphacoders.com/116/1163408.jpg");
+}
+#banner-juju {
+  background-image: url("https://images5.alphacoders.com/111/1116284.jpg");
+}
+.media-picture {
+  width: 100%;
+  height: 60vh;
+}
+#onepiece {
+  width: 150px;
+  top: -60px;
+}
+.video {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+iframe {
+  width: 70%;
+  height: 40vh;
+}
